@@ -1,0 +1,30 @@
+class Solution:
+    def findMin(self, nums: List[int]) -> int:
+        left = 0
+        right = len(nums) - 1
+
+        while left < right:
+            mid = (right + left) // 2
+                
+            # Debug prints for visualization
+            if nums[mid] > nums[right]:
+                left = mid + 1
+            else:
+                right = mid
+
+        return nums[left]
+
+
+
+    
+
+
+        
+
+            
+
+        
+        
+            
+
+        
